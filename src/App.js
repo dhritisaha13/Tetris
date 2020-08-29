@@ -1,26 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Tetris from './components/Tetris.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div className = "App">
+  	<h2><center>Welcome to Tetris Game!</center></h2>
+  	<h3><center>Created by: <a href = "https://dhritisaha.netlify.app">Dhriti Saha</a></center></h3>
+    <Tetris />
+  </div>  
+);
+
 
 export default App;
